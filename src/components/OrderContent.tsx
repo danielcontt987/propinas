@@ -29,9 +29,6 @@ export default function OrderContent({order, removeItem}: OrderContentProps) {
                 ))
             )}
         </div>
-        <div className="mt-5">
-            <button className="bg-blue-950 text-white p-3 rounded-lg w-full">Pagar</button>
-        </div>
     </div>
   )
 }
