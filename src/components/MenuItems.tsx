@@ -1,7 +1,7 @@
 import { MenuItem } from "../types"
     type MenuItemsProps = {
     item: MenuItem,
-    addItem: () => void
+    addItem: (item: MenuItem) => void
 }
 export default function MenuItems({item, addItem}: MenuItemsProps) {
     return (
@@ -9,7 +9,7 @@ export default function MenuItems({item, addItem}: MenuItemsProps) {
         hover:bg-blue-900
         hover:text-white 
         p-4 w-full 
-        flex justify-between rounded-lg" onClick={() => addItem()}>
+        flex justify-between rounded-lg" onClick={() => addItem(item)}>
         <p>{item.name}</p>
         <p className="font-black">${item.price}</p>
     </button>
